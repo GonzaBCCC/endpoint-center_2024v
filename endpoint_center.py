@@ -11,8 +11,8 @@ import copy
 import threading
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description="Run API with OpenAI parameters.")
-    parser.add_argument("--openai_api_key", required=True, help="OpenAI API key")
+    parser = argparse.ArgumentParser(description="Run API with Custom parameters.") #Modified 25/02/2024: change "OpenAI" for "Custom"
+    parser.add_argument("--openai_api_key", required=True, help="OpenAI API key")   #TODO: OpenAI API key not required for BitAgent
     parser.add_argument("--auth_token", default="access_token_to_this_server", help="Authentication token")
     return parser.parse_args()
 
