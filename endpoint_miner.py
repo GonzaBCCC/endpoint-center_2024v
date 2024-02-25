@@ -45,7 +45,7 @@ class EndpointMiner(Miner):
 
     def config(self) -> "bittensor.Config":
 
-        parser = argparse.ArgumentParser(description="OpenAI Miner Configs")
+        parser = argparse.ArgumentParser(description="Miner Configs") #Modified 25/02/2024: remove "OpenAI" from description
         self.add_args(parser)
         return bittensor.config(parser)
 
