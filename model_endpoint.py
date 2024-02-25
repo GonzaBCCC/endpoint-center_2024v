@@ -14,7 +14,7 @@ import copy
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
-def parse_arguments():
+def parse_arguments():  #TODO: adjust parser to BitAgent miner model
     parser = argparse.ArgumentParser(description="Run API with OpenAI parameters.")
     parser.add_argument("--auth_token", default="", help="Authentication token")
     parser.add_argument("--model_name", default="gpt-3.5-turbo", help="Model name")
